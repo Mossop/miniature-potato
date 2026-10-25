@@ -1,12 +1,12 @@
-[env]
-DOTFILES = "{{ config_source | dirname | dirname }}"
+[vars]
+DOTFILES = "{{ config_root }}"
 
 [settings.dotfiles]
 default_mode = "copy"
-root = "{{ config_source | dirname | dirname }}"
+root = "{{ vars.DOTFILES }}"
 
 [settings.write_targets]
-dotfiles = "{{ config_source | dirname | dirname }}/mise/conf.d/dotfiles.toml"
+dotfiles = "{{ vars.DOTFILES }}/mise/conf.d/dotfiles.toml"
 
 [tasks]
-bootstrap = "{{ config_source | dirname | dirname }}/scripts/post-bootstrap"
+bootstrap = "{{ vars.DOTFILES }}/scripts/post-bootstrap"
