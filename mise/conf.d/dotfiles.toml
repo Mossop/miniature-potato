@@ -1,0 +1,4 @@
+[dotfiles]
+"~/.bashrc" = { block = ". $DOTFILES/scripts/bashrc" }
+"~/.bash_profile" = { block = ". $DOTFILES/scripts/bash_profile" }
+"~/.gdbinit" = { mode = "copy" }
