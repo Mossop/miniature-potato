@@ -1,9 +1,11 @@
 [vars]
 DOTFILES = "{{ config_root }}"
 
+[env]
+MISE_DOTFILES_ROOT = "{{ vars.DOTFILES }}"
+
 [settings.dotfiles]
 default_mode = "copy"
-root = "{{ config_root }}"
 
 [settings.write_targets]
 dotfiles = "{{ config_root }}/mise/conf.d/dotfiles.toml"
