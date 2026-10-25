@@ -3,10 +3,10 @@ DOTFILES = "{{ config_source | dirname | dirname }}"
 
 [settings.dotfiles]
 default_mode = "copy"
-root = "$DOTFILES"
+root = "{{ config_source | dirname | dirname }}"
 
 [settings.write_targets]
-dotfiles = "$DOTFILES/mise/conf.d/dotfiles.toml"
+dotfiles = "{{ config_source | dirname | dirname }}/mise/conf.d/dotfiles.toml"
 
 [tasks]
-bootstrap = "$DOTFILES/scripts/post-bootstrap"
+bootstrap = "{{ config_source | dirname | dirname }}/scripts/post-bootstrap"
