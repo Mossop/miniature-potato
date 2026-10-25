@@ -1,0 +1,5 @@
+[settings.write_targets]
+dotfiles = "{{ vars.DOTFILES }}/mise/conf.d/dotfiles.toml"
+
+[settings.dotfiles]
+root = "{{ vars.DOTFILES }}/home"

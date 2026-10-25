@@ -1,0 +1,2 @@
+[env]
+MISE_DOTFILES_ROOT = "{{ vars.DOTFILES }}/home"

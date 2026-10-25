@@ -1,4 +1,6 @@
-[dotfiles]
-"~/.bashrc" = { block = ". $DOTFILES/scripts/bashrc" }
-"~/.bash_profile" = { block = ". $DOTFILES/scripts/bash_profile" }
-"~/.gdbinit" = { mode = "copy" }
+[dotfiles."config.override.toml"]
+source = "../../templates/config.override.toml.tera"
+mode = "template"
+variants = [
+  { default = true, target = "{{ config_source | dirname | dirname }}/config.override.toml" },
+]
