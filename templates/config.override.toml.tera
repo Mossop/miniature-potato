@@ -3,6 +3,3 @@ dotfiles = "{{ vars.DOTFILES }}/mise/conf.d/dotfiles.toml"
 
 [settings.dotfiles]
 root = "{{ vars.DOTFILES }}/home"
-
-[env]
-TEST = "1"

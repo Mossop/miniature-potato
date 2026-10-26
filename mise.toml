@@ -1,2 +1,2 @@
-[env]
-MISE_DOTFILES_ROOT = "{{ vars.DOTFILES }}/home"
+# [env]
+# MISE_DOTFILES_ROOT = "{{ vars.DOTFILES }}/home"

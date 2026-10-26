@@ -3,6 +3,7 @@ DOTFILES = "{{ config_source | dirname | dirname }}"
 
 [settings.dotfiles]
 default_mode = "copy"
+root = "{{ config_source | dirname | dirname }}/home"
 
 # [tasks]
 # bootstrap = "{{ config_root }}/scripts/post-bootstrap.sh"
